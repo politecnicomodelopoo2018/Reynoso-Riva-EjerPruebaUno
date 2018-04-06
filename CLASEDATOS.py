@@ -1,5 +1,9 @@
+from CLASEPERSONA import Persona
+a=Persona()
+
 class Datos(object):
     fecha=None
+    fechaRegistro=None
     peso=None
     altura=None
 
@@ -22,14 +26,23 @@ class Datos(object):
         return self.altura
 
     def AgregarFecha(self,fecha):
-        self.fecha.append(fecha)
+        self.registro.append(fecha)
 
     def AgregarPeso(self,peso):
-        self.peso.append(peso)
+        self.registro.append(peso)
 
     def AgregarAltura(self,altura):
-        self.altura.append(altura)
+        self.registro.append(altura)
 
-    def SaberPeso(self,peso):
+    def setfechaRegistro(self,fechaRegistro):
+        self.fechaRegistro=fechaRegistro
+
+    def getfechaRegistro(self):
+        return self.fechaRegistro
+
+
+    def AgregarFechaRegistro(self,fechaRegistro):
+        self.registro.append(fechaRegistro)
+
 
 
